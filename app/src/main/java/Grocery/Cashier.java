@@ -1,4 +1,4 @@
-
+package Grocery;
 
 public class Cashier {
   public static double payment (double cash, double price) {
