@@ -26,5 +26,6 @@ public class Grocery {
       c.payment(cc, price);
       System.out.println("Your credit card balance is $" + cc.getBalance());
     }
+    sc.close();
   }
 }

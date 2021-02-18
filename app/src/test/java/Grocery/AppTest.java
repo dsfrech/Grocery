@@ -15,4 +15,11 @@ class AppTest {
         CUT.credit(10.0);
         assertEquals(100.00,CUT.getBalance());
     }
+    @Test void checkCashier() {
+        CreditCard cc = new CreditCard(100);
+        Cashier c = new Cashier();
+        c.payment(cc,10);
+        assertEquals(cc.getBalance(), 90);        
+        assertEquals(c.payment(100,10), 90.00);
+    }
 }
