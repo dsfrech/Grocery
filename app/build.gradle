@@ -29,7 +29,11 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'Grocery.App'
+    mainClass = 'Grocery.Grocery'
+}
+
+run {
+    standardInput = System.in
 }
 
 tasks.named('test') {
